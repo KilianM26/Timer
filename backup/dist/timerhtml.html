@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <meta charset="utf-8">
+    <title>"Software Development Timer"</title>
+    <script type="text/javascript" src="Timer_Script.js" charset="utf-8"></script>
+<link rel="stylesheet" href="timerstyle.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:400,700'>
+
+
+  </head>
+  <body>
+<div id="timer">
+    <p id="time">Click Start To Begin Timer</p>
+
+<img src = "https://www.elegantthemes.com/blog/wp-content/uploads/2017/12/shutterstock_275204750-960.jpg" style="width:450px;height:200px;" alt= "timersport" class = "center">
+
+    <input type="number" id="hours" placeholder="Hours" min="0" value="" style="margin:0px auto; display:block;">
+    <input type="number" id="minutes" placeholder="Minutes" min="0" value="" style="margin:0px auto; display:block;">
+    <input type="number" id="seconds" placeholder="Seconds" min="0" value="" style="margin:0px auto; display:block;">
+
+    <input type="button" id="toggle" onclick="toggleTimer()" value="Start" style="margin:0px auto; display:block;font-family: 'Montserrat',sans-serif;">
+    <input type="button" id="reset" onclick="reset()" value="Reset" style="margin:0px auto; display:block;font-family: 'Montserrat',sans-serif;">
+</div>
+
+  </body>
+</html>

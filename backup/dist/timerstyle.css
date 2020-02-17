@@ -1,0 +1,15 @@
+
+ p {
+    font-family: 'Montserrat',sans-serif;
+    color:#581845;
+    font-size:30px;
+text-align:center;}
+
+.center{
+display:block;
+margin-left:440px;
+margin-bottom:100px;
+width:50%;
+}
+
+body{background-color: #FFC300 ;}

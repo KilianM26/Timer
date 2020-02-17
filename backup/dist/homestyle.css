@@ -1,0 +1,25 @@
+
+h1 {
+text-align:center;
+ font-family: 'Montserrat', 'sans-serif';
+ color: #581845;
+ font-size: 50px;
+padding-top:100px;
+
+}
+
+ p {
+    font-family: 'Montserrat',sans-serif;
+    color:#581845;
+    font-size:30px;
+
+text-align:center;}
+
+.center{
+display:block;
+margin-left:425px;
+marigh-right:50px;
+width:50%;
+}
+
+body{background-color: #FFC300 ;}
