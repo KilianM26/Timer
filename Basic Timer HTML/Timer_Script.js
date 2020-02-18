@@ -9,6 +9,11 @@ var millis = 0;
 function toggleTimer() {
   if(document.getElementById("toggle").value == "Start"){          //starting the timer
 
+    if(document.getElementById("second_input").value > 59 || document.getElementById("second_input").value < 0){alert("Invalid Input"); return;}
+    if(document.getElementById("minute_input").value > 59 || document.getElementById("minute_input").value < 0){alert("Invalid Input"); return;}
+    if(document.getElementById("hour_input").value > 23 || document.getElementById("second_input").value < 0){alert("Invalid Input"); return;}
+    if(document.getElementById("day_input").value < 0){alert("Invalid Input"); return;}
+    
     document.getElementById("toggle").value = "Pause";
     sec = document.getElementById("second_input").value;
     if(!min){min = 0;}
@@ -62,6 +67,7 @@ function increment(){
 
 //resets the time on the timer
 function reset() {
+  clearInterval(intervalID);
   document.getElementById('toggle').value = "Start";
   document.getElementById("days").innerHTML = 0;
   document.getElementById("hours").innerHTML = 0;
