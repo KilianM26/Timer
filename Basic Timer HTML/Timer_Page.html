@@ -16,11 +16,11 @@
 
 
     <div class="input">
-	
+
       <input type="number" id="day_input" placeholder="Days" min="0" value="" style="font-family: 'Montserrat',sans-serif;">
-      <input type="number" id="hour_input" placeholder="Hours"  min="0" value="" style="font-family: 'Montserrat',sans-serif;">
-      <input type="number" id="minute_input" placeholder="Minutes" min="0" value="" style=" font-family: 'Montserrat',sans-serif;">
-      <input type="number" id="second_input" placeholder="Seconds" min="0" value="" style="font-family: 'Montserrat',sans-serif; ">
+      <input type="number" id="hour_input" placeholder="Hours"  min="0" max="23" value="" style="font-family: 'Montserrat',sans-serif;">
+      <input type="number" id="minute_input" placeholder="Minutes" min="0" max="59" value="" style=" font-family: 'Montserrat',sans-serif;">
+      <input type="number" id="second_input" placeholder="Seconds" min="0" max="59" value="" style="font-family: 'Montserrat',sans-serif; ">
 
       <input type="button" class="btn timer" id="toggle" onclick="toggleTimer()" value="Start" style="font-family: 'Montserrat',sans-serif;">
       <input type="button" class="btn timer" id="reset" onclick="reset()" value="Reset" style="font-family: 'Montserrat',sans-serif;">
