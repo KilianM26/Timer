@@ -23,7 +23,6 @@ function toggleTimer() {
   }else if(document.getElementById("toggle").value == "Resume"){  //resuming the timer
 
     document.getElementById("toggle").value = "Pause";
-    document.getElementById("time").innerHTML = hr+":"+min+":"+sec+"."+millis;
     intervalID = setInterval("increment()", 10);
 
   }else{                                                          //stopping the timer
@@ -40,7 +39,7 @@ function increment(){
   millis --;
   if(millis == 0 && sec == 0 && min == 0 && hr == 0 && day == 0){
     clearInterval(intervalID);
-    alert("YOUR TIMER IS DONE BRUH");
+    alert("YOUR TIMER IS FINISHED");
   }else if(millis < 0){
     millis = 99
     sec --;
