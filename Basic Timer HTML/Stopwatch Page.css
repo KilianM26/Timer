@@ -69,6 +69,7 @@ body {
   margin-left: 40px;
   min-width: 90px;
   position: relative;
+  color: white;
 }
 .clock-col:not(:last-child):before, .clock-col:not(:last-child):after {
   content: "";

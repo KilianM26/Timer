@@ -15,7 +15,6 @@ function toggleTimer() {
   }else if(document.getElementById("toggle").value == "Resume"){  //resuming the timer
 
     document.getElementById("toggle").value = "Pause";
-    document.getElementById("time").innerHTML = hr+":"+min+":"+sec+"."+millis;
     intervalID = setInterval("increment()", 10);
 
   }else{                                                          //stopping the timer
