@@ -5,7 +5,7 @@ var beginning = new Date();
 var sec = beginning.getSeconds();
 var min = beginning.getMinutes();
 var hr = beginning.getHours();
-var day = beginning.getDays();
+var day = beginning.getDate();
 
 var pausedTime = new Date();
 var pausedSec = 0;
@@ -25,6 +25,7 @@ function toggleTimer(){
     update = true;
   }else if(document.getElementById("toggle").value == "Resume"){  //resuming the timer
     document.getElementById("toggle").value = "Pause";
+    pausedTime = new Date();
 
     //beginning = new Date();
     //sec = beginning.getSeconds();
