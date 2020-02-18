@@ -9,18 +9,17 @@ var day = beginning.getDays();
 
 var pausedTime = new Date();
 var pausedSec = 0;
-var pausedMin = 0+0;
-var pausedHr = 0+0;
-var pausedDay = 0+0;
+var pausedMin = 0;
+var pausedHr = 0;
+var pausedDay = 0;
 
 function toggleTimer(){
   if(document.getElementById("toggle").value == "Start"){          //starting the timer
     document.getElementById("toggle").value = "Pause";
-    alert("START");
     pausedSec = 0;
-    pausedMin = 0+0;
-    pausedHr = 0+0;
-    pausedDay = 0+0;
+    pausedMin = 0;
+    pausedHr = 0;
+    pausedDay = 0;
 
 
     update = true;
@@ -41,7 +40,6 @@ function toggleTimer(){
     pausedSec = 0;
     diff = pausedTime.getTime() - beginning.getTime();
     diffSec = diff / (1000);
-    alert(diffSec);
     //pausedSec = pausedSec + ;
     //pausedMin = pausedMin + diff / (1000 * 60);
     //pausedHr = pausedHr + diff / (1000 * 3600);
